@@ -191,6 +191,6 @@ export default function mainChoreo() {
     })
         .add(navAppearance())  
         .add(headingAnimation(),"<")
-        .add(imageAnimation())
+        .add(imageAnimation(),"-=1.5")
         .add(pinnedHeading())
 }

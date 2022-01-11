@@ -92,6 +92,6 @@ export default function aboutMeChoreo() {
     })
         .add(navAppearance())
         .add(headingAnimation(),"<")
-        .add(imageAnimation(), "-=1")  
+        .add(imageAnimation(),"-=1.5")  
         .add(pinnedHeading())
 }
