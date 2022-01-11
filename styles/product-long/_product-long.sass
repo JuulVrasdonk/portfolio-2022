@@ -1,0 +1,292 @@
+header div h1 
+    margin-top: 95px
+    margin-bottom: 25px
+
+    span
+     font-size: $heading
+
+header > div div p
+    margin-bottom: 96px
+    width: 95%
+    
+    span:first-of-type
+        color: #CFCFCF
+
+    span:nth-of-type(2)
+        color: #515151
+
+    span:last-of-type
+        color: #383838
+
+header ul
+        display: flex
+        width: 76%
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 44px
+
+        li
+            width: 50%
+        
+        li:nth-of-type(2), li:nth-of-type(4)
+            margin-right: 0
+            margin-left: 0
+
+        li:first-of-type, li:nth-of-type(2)
+            margin-bottom: 32px
+
+        li:nth-of-type(2) p 
+            font-size: clamp(12.5px, 2.5vw, 18px)
+
+
+header > .divider
+    height: 1px
+    width: 50px
+    background-color: white
+    margin-bottom: 106px
+
+header .scroll
+    display: flex
+    align-items: center
+    margin-left: 5px
+
+    p
+        font-size: 18px
+        margin-left: 9px
+        padding-top: 3px
+
+.scroll-cta-animated
+    animation: rec-circle 3s infinite cubic-bezier(0.075, 0.820, 0.165, 1.000)
+
+.scroll-cta-background
+    fill: white
+    opacity: .3
+
+@keyframes rec-circle
+    0% 
+        height: 33%
+        opacity: 1
+
+    50%
+        height: 100%
+        transform: translateY(0px)
+        
+
+    100%
+        height: 10px
+        transform: translateY(70px)
+        opacity: 1
+
+.iterational > ul
+    overflow: hidden
+
+    li ul
+        display: flex
+        margin-bottom: 14px
+    
+        li img 
+            height: 156px
+            margin: 0 7px
+
+.iterational ul li:first-of-type ul
+    transform: translateX(-250px)
+
+.iterational ul li:nth-of-type(2) ul
+    transform: translateX(100px)
+
+.iterational ul li:nth-of-type(3) ul
+    transform: translateX(-150px)
+
+
+main section article > h2
+    margin-left: 2.9%
+    width: 8.5em
+    margin-bottom: 17px
+
+    span
+        font-size: $textheading
+
+main section article > p 
+    margin-left: 2.9%
+    width: 80%
+
+
+.multidevice
+    position: -webkit-sticky
+    position: sticky
+    top: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 258px
+    margin-bottom: 640px
+
+.multidevice .responsive-anim
+    width: 94.2%  
+    margin-bottom: 66px
+
+.open-file
+    font-family: AndersonGroteskUltrabold
+    position: relative
+    margin-left: 2.9%
+
+    .divider:first-of-type
+        height: 1px
+        width: 50px
+        background-color: white
+        position: absolute
+        top: -9px
+        left: 0
+        transition: .5s
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+    .divider:last-of-type
+        height: 1px
+        width: 50px
+        background-color: white
+        position: absolute
+        bottom: -7px
+        left: 0
+        transition: .5s
+        transition-delay: .1s
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+.open-file:hover > .divider:first-of-type
+    width: 100px
+    transition: .5s
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+.open-file:hover > .divider:last-of-type
+    width: 75px
+    transition: .5s
+    transition-delay: .1s
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+
+
+main > div:last-of-type 
+        position: relative
+        height: 2em
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 50vh 0 25vh 0 
+        
+        a 
+            padding: 7.5em
+
+            span
+                white-space: nowrap
+
+@media (min-width: $tablet)  
+    h1, header > div div p, header ul, header main .divider, main > a:first-of-type
+        margin-left: 10.7vw
+
+    header > div div p
+        width: 60%
+        
+    .scroll
+        display: flex
+        justify-content: center
+        margin: 0
+        width: 10.7vw
+        position: relative
+        top: -100px
+
+    main
+        margin: 0
+
+    main section > ul li img 
+        height: 274px
+        margin: 0 7px
+
+    .iterational ul li:first-of-type ul
+        transform: translateX(100px)
+
+    .iterational ul li:nth-of-type(2) ul
+        transform: translateX(200px)
+
+    .iterational ul li:nth-of-type(3) ul
+        transform: translateX(-50px)
+    
+    main section article > p 
+        margin-left: 2.9%
+        width: 60%
+
+
+@media (min-width: $desktop)    
+    header
+        height: 100vh  
+
+    header > div:first-of-type
+        display: flex
+        height: 80vh
+        align-items: center
+
+        div
+            width: 55%
+
+        ul
+            margin: 0
+            padding-top: 130px
+            width: 40%
+            height: 40%
+            
+            li
+                width: 50%
+
+
+            li:first-of-type, li:nth-of-type(2)
+                margin-bottom: 0
+
+
+    main section
+        display: flex
+        flex-direction: row-reverse
+        width: 100vw
+
+        article
+            display: flex
+            justify-content: center
+            flex-direction: column
+            width: 45%
+            padding-left: 10.7vw
+
+            h2
+                margin-left: 0
+                font-size: clamp(28px, 5.71vw, 48px)
+
+            p
+                margin-left: 0
+                width: 70%
+
+    .iterational ul
+            position: relative
+            z-index: -1
+            right: 50px
+            width: 55%
+
+    .multidevice 
+            top: 258px
+            flex-direction: row-reverse 
+            align-items: center
+            margin-bottom: 890px
+
+            article
+                width: 50%
+                
+                p
+                    width: 80%
+
+            .responsive-anim
+                width: 50%
+                margin-right: 10.7vw
+                margin-bottom: 0
+
+    .iterational > ul li ul li img 
+        height: 224px
+        margin: 0 7px
+
+
+
+    
+                 
