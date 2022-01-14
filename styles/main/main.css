@@ -232,9 +232,16 @@ ul {
   line-height: .8;
 }
 
+.mobile-hidden {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .tablet-hidden {
     display: none;
+  }
+  .mobile-hidden {
+    display: inline-block;
   }
 }
 
@@ -903,25 +910,111 @@ footer > div:last-of-type p:last-of-type {
 
 .about-me main {
   margin: 2.9%;
+}
+
+.about-me main ul:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 76%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.about-me main ul:first-of-type li {
+  width: 45%;
+}
+
+.about-me main ul:first-of-type li:nth-of-type(2), .about-me main ul:first-of-type li:nth-of-type(4) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.about-me main li:first-of-type, .about-me main li:nth-of-type(2), .about-me main li:nth-of-type(3), .about-me main li:nth-of-type(4) {
+  margin-bottom: 32px;
+}
+
+.about-me .cmd-marked {
+  color: #FEF01F;
+}
+
+.about-me .skoll-marked {
+  color: #ff4d4d;
+}
+
+.about-me main > article h3 {
+  word-spacing: clamp(0.2em, 1vw, 1em);
+}
+
+.about-me main > article h3 span {
+  font-size: clamp(32px, 7.14vw, 52px);
+}
+
+.about-me main > article p {
+  width: 90%;
+}
+
+.about-me main > article:first-of-type p, .about-me main > article:nth-of-type(2) p {
+  margin-bottom: 120px;
+}
+
+.about-me main > article:last-of-type p {
+  margin-bottom: 40px;
+}
+
+.about-me .open-file {
+  font-family: AndersonGroteskUltrabold;
   position: relative;
-  bottom: 50px;
 }
 
-.about-me main p:first-of-type {
-  margin-bottom: 50px;
+.about-me .open-file .divider:first-of-type {
+  height: 1px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.about-me main strong {
-  font-size: clamp(32px, 7.14vw, 72px);
-  width: 10em;
+.about-me .open-file .divider:last-of-type {
+  height: 1px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.about-me main h2 {
-  margin-top: 68px;
-  font-size: clamp(14px, 2.5vw, 18px);
-  font-family: AndersonGrotesk;
-  text-decoration: underline;
-  margin-bottom: 12px;
+.about-me .open-file:hover > .divider:first-of-type {
+  width: 100px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.about-me .open-file:hover > .divider:last-of-type {
+  width: 75px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @media (min-width: 576px) {
@@ -937,17 +1030,29 @@ footer > div:last-of-type p:last-of-type {
     bottom: 0px;
     margin: 0 10.7%;
   }
-  .about-me main p:first-of-type {
-    margin-top: 60px;
+  .about-me main > ul:first-of-type {
+    margin: 120px 0;
+  }
+  .about-me main > article p {
+    width: 80%;
+  }
+  .about-me article h3 {
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: 1024px) {
-  .about-me main {
+  .about-me main ul:first-of-type {
+    width: 75%;
+  }
+  .about-me main ul:first-of-type li {
+    width: 33%;
+  }
+  .about-me main > article {
     width: 60%;
   }
-  .about-me main p {
-    width: 60%;
+  .about-me main li:first-of-type, .about-me main li:nth-of-type(2), .about-me main li:nth-of-type(3) {
+    margin-bottom: 64px;
   }
 }
 
