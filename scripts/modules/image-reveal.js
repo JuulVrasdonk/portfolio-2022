@@ -16,6 +16,7 @@ export default function imageReveal () {
             event.target.style.zIndex = 99
             image.setAttribute('src', imgData)
             image.style.opacity = 1
+            // image.style.transition = "all 0.2s";
         })
     
         // set mouse position on mouse move

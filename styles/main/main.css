@@ -121,6 +121,7 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 body {
@@ -862,6 +863,7 @@ footer > div:last-of-type p:last-of-type {
   }
   .home #sel-work > ul > li {
     margin-bottom: 0px;
+    width: 50%;
   }
   .home #sel-work > ul > li > a > p:last-of-type {
     padding-bottom: 92.5px;
@@ -870,7 +872,7 @@ footer > div:last-of-type p:last-of-type {
     padding-top: 92.5px;
   }
   .home #sel-work > ul > li > a > p {
-    width: 40%;
+    width: 80%;
   }
 }
 
