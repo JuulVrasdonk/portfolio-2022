@@ -1,4 +1,5 @@
 export default function aboutMeChoreo() {
+
     function headingAnimation() {
         let tl = gsap.timeline();
         tl.from("header .wrapping-paper", {
@@ -23,7 +24,7 @@ export default function aboutMeChoreo() {
                 ease: "power4.out"
             })
             tl.from(".image-of-me", {
-                scale: 1.2
+                scale: 1.2,
             },"<")
         return tl;
         }
@@ -62,28 +63,7 @@ export default function aboutMeChoreo() {
             let tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: "main ul",
-                    start: "top center"
-                }
-            });
-            tl.from("main ul li", {
-                duration: 1,
-                ease: "power4.out",
-                opacity: 0,
-                stagger: .1
-            })
-        }
-
-        let tl = gsap.timeline()
-            .add(textAppearance())
-        return tl
-    }
-
-    function meStatsTl() {
-        function textAppearance() {
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: "main ul",
-                    start: "top center"
+                    start: "top-=40px center"
                 }
             });
             tl.from("main ul li", {
@@ -195,9 +175,9 @@ export default function aboutMeChoreo() {
     let master = gsap.timeline({
         delay: .7
     })
-        .add(navAppearance())
+        .add(navAppearance())  
         .add(headingAnimation(),"<")
-        .add(imageAnimation(),"-=1.5")  
+        .add(imageAnimation(),"-=1.5")
         .add(pinnedHeading())
         .add(meStatsTl())
         .add(personTl())
