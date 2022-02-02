@@ -61,8 +61,7 @@ export default function namenmonumentChoreo() {
     let designChallengeTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#designChallenge",
-            start: "top-=20% center",
-            markers: true
+            start: "top-=20% center"
         }
     });
     designChallengeTl.from("#designChallenge h2 .wrapping-paper", {
@@ -86,8 +85,7 @@ export default function namenmonumentChoreo() {
     let bigScreenTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#groteScherm",
-            start: "top-=20% center",
-            markers: true
+            start: "top-=20% center"
         }
     });
     bigScreenTl.from("#groteScherm h2 .wrapping-paper", {
@@ -110,8 +108,7 @@ export default function namenmonumentChoreo() {
     let touchscreenTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#touchscreens",
-            start: "top-=20% center",
-            markers: true
+            start: "top-=20% center"
         }
     });
     touchscreenTl.from("#touchscreens h2 .wrapping-paper", {
@@ -134,8 +131,7 @@ export default function namenmonumentChoreo() {
     let storiesTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#verhalen",
-            start: "top-=20% center",
-            markers: true
+            start: "top-=20% center"
         }
     });
     storiesTl.from("#verhalen h2 .wrapping-paper", {
@@ -158,8 +154,7 @@ export default function namenmonumentChoreo() {
     let interactionTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#interactie",
-            start: "top-=10% center",
-            markers: true
+            start: "top-=10% center"
         }
     });
     interactionTl.from("#interactie h2 .wrapping-paper", {
