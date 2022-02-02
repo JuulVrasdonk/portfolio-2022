@@ -1,0 +1,408 @@
+header div h1 
+    margin-top: 95px
+    margin-bottom: 25px
+
+    span
+     font-size: $heading
+
+header > div div p
+    margin-bottom: 96px
+    width: 95%
+    
+    span:first-of-type
+        color: #CFCFCF
+
+    span:nth-of-type(2)
+        color: #515151
+
+    span:last-of-type
+        color: #383838
+
+header ul
+        display: flex
+        width: 76%
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 44px
+
+        li
+            width: 50%
+        
+        li:nth-of-type(2), li:nth-of-type(4)
+            margin-right: 0
+            margin-left: 0
+
+        li:first-of-type, li:nth-of-type(2)
+            margin-bottom: 32px
+
+        li:nth-of-type(2) p 
+            font-size: clamp(12.5px, 2.5vw, 18px)
+
+
+header > .divider
+    height: 1px
+    width: 50px
+    background-color: white
+    margin-bottom: 106px
+
+header .scroll
+    display: flex
+    align-items: center
+    margin-left: 5px
+
+    p
+        font-size: 18px
+        margin-left: 9px
+        padding-top: 3px
+
+.scroll-cta-animated
+    animation: rec-circle 3s infinite cubic-bezier(0.075, 0.820, 0.165, 1.000)
+
+.scroll-cta-background
+    fill: white
+    opacity: .3
+
+@keyframes rec-circle
+    0% 
+        height: 33%
+        opacity: 1
+
+    50%
+        height: 100%
+        transform: translateY(0px)
+        
+
+    100%
+        height: 10px
+        transform: translateY(70px)
+        opacity: 1
+
+
+// ********** MAIN ********** //
+
+main 
+    overflow-x: hidden
+
+    section
+        margin: 0 2.9%
+
+        p
+            width: 80%
+
+        h2 
+            word-spacing: clamp(0.2em, 1vw, 1em)
+            .wrapping-paper
+                font-size: clamp(28px, 5.71vw, 48px)
+
+#designChallenge 
+    margin-top: 162px
+    margin-bottom: 162px
+
+    h2
+        margin-bottom: 17px
+
+#designChallenge > p:first-of-type
+    margin-bottom: 34px
+
+#designChallenge > h3
+    margin-bottom: 17px
+
+#designChallenge div p
+    margin-bottom: 17px
+        
+#designChallenge div img
+    width: 100%
+
+    
+#groteScherm img, #groteScherm video
+    width: 100%
+
+#groteScherm h2, #groteScherm img, #groteScherm video, #groteScherm p:first-of-type
+    margin-bottom: 17px
+
+.calculation
+    opacity: .7
+
+#groteScherm
+    margin-bottom: 162px
+
+#touchscreens 
+    margin-bottom: 162px
+
+    h2
+        margin-bottom: 17px
+
+    ul
+        display: flex
+        width: 100%
+        flex-wrap: wrap
+        li
+            width: 48%
+
+            img
+                width: 100%
+
+        li:nth-of-type(even)
+            margin-left: 2%
+
+    div
+        margin-bottom: 34px
+        video
+            width: 100%
+            margin: 34px 0
+
+        div 
+            p
+                margin-bottom: 17px
+            a svg
+                height: 15px
+                transform: translateY(2px)
+
+    h4
+        font-family: AndersonGrotesk
+        margin-bottom: 9px
+
+    iframe
+        width: 100%
+        aspect-ratio: 1 / 0.7
+
+#verhalen 
+    margin-bottom: 162px
+
+    h2
+        margin-bottom: 17px
+
+    img, video
+        width: 100%
+        margin-bottom: 17px
+
+    p:first-of-type
+        margin-bottom: 17px
+
+#interactie 
+
+    img
+        width: 100%
+        margin: 17px 0
+
+
+
+@media (min-width: $tablet)  
+    h1, header > div div p, header main .divider, main > a:first-of-type
+        margin-left: 10.7vw
+
+    header > div div p
+        width: 60%
+        
+    .scroll
+        display: flex
+        justify-content: center
+        margin: 0
+        width: 10.7vw
+        position: relative
+        top: -100px
+
+    main section p 
+        width: 70%
+
+    #designChallenge div img
+        width: 70%
+
+    #designChallenge div p:last-of-type
+        margin-bottom: 36px
+
+    #groteScherm h2, #groteScherm img, #groteScherm video, #groteScherm p:first-of-type
+        margin-bottom: 36px 
+
+    #verhalen p:first-of-type, #verhalen img, #verhalen video
+        margin-bottom: 36px
+
+    #interactie img
+        margin: 36px 0
+
+
+@media (min-width: $desktop)    
+    header
+        height: 100vh  
+
+    header > div:first-of-type
+        display: flex
+        height: 80vh
+        align-items: center
+
+        div
+            width: 55%
+
+        ul
+            margin: 0
+            margin-right: 10.7vw
+            padding-top: 130px
+            width: 29.3%
+            height: 40%
+            
+            li
+                width: 50%
+
+
+            li:first-of-type, li:nth-of-type(2)
+                margin-bottom: 0
+
+
+    main section 
+        margin: 0 10.7vw
+        width: 100%
+
+        h2
+            margin-bottom: 32px
+
+    #designChallenge > p:first-of-type
+        width: 30%
+        margin-bottom: 98px
+
+    #designChallenge h3 
+        margin-bottom: 32px 
+
+    #designChallenge > div
+        display: flex
+        width: 100%
+
+        div 
+            width: 50%
+
+            p
+                width: 60%
+            
+            p:first-of-type
+                margin-bottom: 30px
+
+        img
+            width: 30%
+            
+
+    #groteScherm > div:first-of-type
+        display: flex
+        justify-content: space-between
+        width: 78.6%
+
+        img
+            width: 49%
+            margin-bottom: 0
+
+
+    #groteScherm > p:first-of-type
+        width: 30%
+        font-size: clamp(14px, 2.5vw, 18px)
+        margin-top: 100px
+        margin-bottom: 100px
+
+
+    #groteScherm div:nth-of-type(2)
+        display: flex
+        width: 78.6%
+
+        video
+            width: 67.7%
+            margin-right: 2%
+
+        ul
+            transform: translateY(5px)
+        p
+            font-size: $extra
+            margin-bottom: 20px
+            line-height: 120%
+            width: 100%
+
+        .calculation
+            opacity: .7
+            line-height: 160%
+            margin: 20px 0
+
+    #touchscreens h2 
+        margin-bottom: 36px
+
+    #touchscreens ul 
+        width: 78.6%
+
+        li 
+            width: 24%
+        
+        li:nth-of-type(even)
+            margin-left: 0
+
+
+        li:nth-of-type(odd)
+            margin-right: 1%
+
+        li:nth-of-type(2), li:nth-of-type(6)
+            margin-right: 1%
+
+
+    #touchscreens > div
+        display: flex
+        margin: 200px 0
+        width: 78.6%
+
+        video
+            width: 50%
+
+        div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 50%
+
+            p 
+                margin-left: 20%
+                margin-right: 10%
+            
+            a
+                margin-left: 20%
+                margin-top: 10px
+                color: white
+                opacity: .7
+                text-decoration: none
+
+                svg
+                    transform: translateY(2px)
+                    height: 15px
+                    margin-left: 5px
+                    transition: 1s
+                    transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000)
+
+            a:hover > svg
+                transform: translateX(20px)
+                transition: 1s
+                transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000)
+
+    #touchscreens h4
+        margin-bottom: 10px
+        font-weight: normal
+
+    #touchscreens iframe
+        width: 78.6%
+        aspect-ratio: 1 / 0.6
+
+    #verhalen div
+        display: flex
+        width: 78.6%
+
+        img, video
+            width: 50%
+        
+        img
+            margin-bottom: 32px
+
+        p:first-of-type
+            margin: auto
+            margin-left: 10%
+
+    #interactie div
+        display: flex
+        width: 78.6%
+        img
+            margin-bottom: 32px
+            width: 50%
+
+        p
+            margin: auto
+            margin-left: 10%

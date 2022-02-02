@@ -1619,4 +1619,506 @@ footer > div:last-of-type p:last-of-type {
     margin: 0 7px;
   }
 }
+
+.namenmonument header div h1 {
+  margin-top: 95px;
+  margin-bottom: 25px;
+}
+
+.namenmonument header div h1 span {
+  font-size: clamp(56px, 8vw, 100px);
+}
+
+.namenmonument header > div div p {
+  margin-bottom: 96px;
+  width: 95%;
+}
+
+.namenmonument header > div div p span:first-of-type {
+  color: #CFCFCF;
+}
+
+.namenmonument header > div div p span:nth-of-type(2) {
+  color: #515151;
+}
+
+.namenmonument header > div div p span:last-of-type {
+  color: #383838;
+}
+
+.namenmonument header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 76%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.namenmonument header ul li {
+  width: 50%;
+}
+
+.namenmonument header ul li:nth-of-type(2), .namenmonument header ul li:nth-of-type(4) {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.namenmonument header ul li:first-of-type, .namenmonument header ul li:nth-of-type(2) {
+  margin-bottom: 32px;
+}
+
+.namenmonument header ul li:nth-of-type(2) p {
+  font-size: clamp(12.5px, 2.5vw, 18px);
+}
+
+.namenmonument header > .divider {
+  height: 1px;
+  width: 50px;
+  background-color: white;
+  margin-bottom: 106px;
+}
+
+.namenmonument header .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+}
+
+.namenmonument header .scroll p {
+  font-size: 18px;
+  margin-left: 9px;
+  padding-top: 3px;
+}
+
+.namenmonument .scroll-cta-animated {
+  -webkit-animation: rec-circle 3s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation: rec-circle 3s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.namenmonument .scroll-cta-background {
+  fill: white;
+  opacity: .3;
+}
+
+@keyframes rec-circle {
+  0% {
+    height: 33%;
+    opacity: 1;
+  }
+  50% {
+    height: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    height: 10px;
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+    opacity: 1;
+  }
+}
+
+.namenmonument main {
+  overflow-x: hidden;
+}
+
+.namenmonument main section {
+  margin: 0 2.9%;
+}
+
+.namenmonument main section p {
+  width: 80%;
+}
+
+.namenmonument main section h2 {
+  word-spacing: clamp(0.2em, 1vw, 1em);
+}
+
+.namenmonument main section h2 .wrapping-paper {
+  font-size: clamp(28px, 5.71vw, 48px);
+}
+
+.namenmonument #designChallenge {
+  margin-top: 162px;
+  margin-bottom: 162px;
+}
+
+.namenmonument #designChallenge h2 {
+  margin-bottom: 17px;
+}
+
+.namenmonument #designChallenge > p:first-of-type {
+  margin-bottom: 34px;
+}
+
+.namenmonument #designChallenge > h3 {
+  margin-bottom: 17px;
+}
+
+.namenmonument #designChallenge div p {
+  margin-bottom: 17px;
+}
+
+.namenmonument #designChallenge div img {
+  width: 100%;
+}
+
+.namenmonument #groteScherm img, .namenmonument #groteScherm video {
+  width: 100%;
+}
+
+.namenmonument #groteScherm h2, .namenmonument #groteScherm img, .namenmonument #groteScherm video, .namenmonument #groteScherm p:first-of-type {
+  margin-bottom: 17px;
+}
+
+.namenmonument .calculation {
+  opacity: .7;
+}
+
+.namenmonument #groteScherm {
+  margin-bottom: 162px;
+}
+
+.namenmonument #touchscreens {
+  margin-bottom: 162px;
+}
+
+.namenmonument #touchscreens h2 {
+  margin-bottom: 17px;
+}
+
+.namenmonument #touchscreens ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.namenmonument #touchscreens ul li {
+  width: 48%;
+}
+
+.namenmonument #touchscreens ul li img {
+  width: 100%;
+}
+
+.namenmonument #touchscreens ul li:nth-of-type(even) {
+  margin-left: 2%;
+}
+
+.namenmonument #touchscreens div {
+  margin-bottom: 34px;
+}
+
+.namenmonument #touchscreens div video {
+  width: 100%;
+  margin: 34px 0;
+}
+
+.namenmonument #touchscreens div div p {
+  margin-bottom: 17px;
+}
+
+.namenmonument #touchscreens div div a svg {
+  height: 15px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.namenmonument #touchscreens h4 {
+  font-family: AndersonGrotesk;
+  margin-bottom: 9px;
+}
+
+.namenmonument #touchscreens iframe {
+  width: 100%;
+  aspect-ratio: 1 / 0.7;
+}
+
+.namenmonument #verhalen {
+  margin-bottom: 162px;
+}
+
+.namenmonument #verhalen h2 {
+  margin-bottom: 17px;
+}
+
+.namenmonument #verhalen img, .namenmonument #verhalen video {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.namenmonument #verhalen p:first-of-type {
+  margin-bottom: 17px;
+}
+
+.namenmonument #interactie img {
+  width: 100%;
+  margin: 17px 0;
+}
+
+@media (min-width: 576px) {
+  .namenmonument h1, .namenmonument header > div div p, .namenmonument header main .divider, .namenmonument main > a:first-of-type {
+    margin-left: 10.7vw;
+  }
+  .namenmonument header > div div p {
+    width: 60%;
+  }
+  .namenmonument .scroll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    width: 10.7vw;
+    position: relative;
+    top: -100px;
+  }
+  .namenmonument main section p {
+    width: 70%;
+  }
+  .namenmonument #designChallenge div img {
+    width: 70%;
+  }
+  .namenmonument #designChallenge div p:last-of-type {
+    margin-bottom: 36px;
+  }
+  .namenmonument #groteScherm h2, .namenmonument #groteScherm img, .namenmonument #groteScherm video, .namenmonument #groteScherm p:first-of-type {
+    margin-bottom: 36px;
+  }
+  .namenmonument #verhalen p:first-of-type, .namenmonument #verhalen img, .namenmonument #verhalen video {
+    margin-bottom: 36px;
+  }
+  .namenmonument #interactie img {
+    margin: 36px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .namenmonument header {
+    height: 100vh;
+  }
+  .namenmonument header > div:first-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .namenmonument header > div:first-of-type div {
+    width: 55%;
+  }
+  .namenmonument header > div:first-of-type ul {
+    margin: 0;
+    margin-right: 10.7vw;
+    padding-top: 130px;
+    width: 29.3%;
+    height: 40%;
+  }
+  .namenmonument header > div:first-of-type ul li {
+    width: 50%;
+  }
+  .namenmonument header > div:first-of-type ul li:first-of-type, .namenmonument header > div:first-of-type ul li:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+  .namenmonument main section {
+    margin: 0 10.7vw;
+    width: 100%;
+  }
+  .namenmonument main section h2 {
+    margin-bottom: 32px;
+  }
+  .namenmonument #designChallenge > p:first-of-type {
+    width: 30%;
+    margin-bottom: 98px;
+  }
+  .namenmonument #designChallenge h3 {
+    margin-bottom: 32px;
+  }
+  .namenmonument #designChallenge > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .namenmonument #designChallenge > div div {
+    width: 50%;
+  }
+  .namenmonument #designChallenge > div div p {
+    width: 60%;
+  }
+  .namenmonument #designChallenge > div div p:first-of-type {
+    margin-bottom: 30px;
+  }
+  .namenmonument #designChallenge > div img {
+    width: 30%;
+  }
+  .namenmonument #groteScherm > div:first-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 78.6%;
+  }
+  .namenmonument #groteScherm > div:first-of-type img {
+    width: 49%;
+    margin-bottom: 0;
+  }
+  .namenmonument #groteScherm > p:first-of-type {
+    width: 30%;
+    font-size: clamp(14px, 2.5vw, 18px);
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .namenmonument #groteScherm div:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 78.6%;
+  }
+  .namenmonument #groteScherm div:nth-of-type(2) video {
+    width: 67.7%;
+    margin-right: 2%;
+  }
+  .namenmonument #groteScherm div:nth-of-type(2) ul {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .namenmonument #groteScherm div:nth-of-type(2) p {
+    font-size: clamp(10px, 1.79vw, 16px);
+    margin-bottom: 20px;
+    line-height: 120%;
+    width: 100%;
+  }
+  .namenmonument #groteScherm div:nth-of-type(2) .calculation {
+    opacity: .7;
+    line-height: 160%;
+    margin: 20px 0;
+  }
+  .namenmonument #touchscreens h2 {
+    margin-bottom: 36px;
+  }
+  .namenmonument #touchscreens ul {
+    width: 78.6%;
+  }
+  .namenmonument #touchscreens ul li {
+    width: 24%;
+  }
+  .namenmonument #touchscreens ul li:nth-of-type(even) {
+    margin-left: 0;
+  }
+  .namenmonument #touchscreens ul li:nth-of-type(odd) {
+    margin-right: 1%;
+  }
+  .namenmonument #touchscreens ul li:nth-of-type(2), .namenmonument #touchscreens ul li:nth-of-type(6) {
+    margin-right: 1%;
+  }
+  .namenmonument #touchscreens > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 200px 0;
+    width: 78.6%;
+  }
+  .namenmonument #touchscreens > div video {
+    width: 50%;
+  }
+  .namenmonument #touchscreens > div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+  }
+  .namenmonument #touchscreens > div div p {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  .namenmonument #touchscreens > div div a {
+    margin-left: 20%;
+    margin-top: 10px;
+    color: white;
+    opacity: .7;
+    text-decoration: none;
+  }
+  .namenmonument #touchscreens > div div a svg {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+    height: 15px;
+    margin-left: 5px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .namenmonument #touchscreens > div div a:hover > svg {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+            transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .namenmonument #touchscreens h4 {
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  .namenmonument #touchscreens iframe {
+    width: 78.6%;
+    aspect-ratio: 1 / 0.6;
+  }
+  .namenmonument #verhalen div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 78.6%;
+  }
+  .namenmonument #verhalen div img, .namenmonument #verhalen div video {
+    width: 50%;
+  }
+  .namenmonument #verhalen div img {
+    margin-bottom: 32px;
+  }
+  .namenmonument #verhalen div p:first-of-type {
+    margin: auto;
+    margin-left: 10%;
+  }
+  .namenmonument #interactie div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 78.6%;
+  }
+  .namenmonument #interactie div img {
+    margin-bottom: 32px;
+    width: 50%;
+  }
+  .namenmonument #interactie div p {
+    margin: auto;
+    margin-left: 10%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
