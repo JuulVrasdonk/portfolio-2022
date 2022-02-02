@@ -131,7 +131,7 @@ export default function namenmonumentChoreo() {
     let storiesTl = gsap.timeline({
         scrollTrigger: {
             trigger: "#verhalen",
-            start: "top-=20% center"
+            start: "top-=10% center"
         }
     });
     storiesTl.from("#verhalen h2 .wrapping-paper", {
